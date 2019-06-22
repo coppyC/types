@@ -1,0 +1,13 @@
+{
+  "name": "@types/mpvue",
+  "version": "0.9",
+  "description": "拓展 vue, 增强mpvue提示",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "git+https://github.com/coppyC/types/tree/mpvue",
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  },
+  "author": "coppy",
+  "license": "MIT"
+}

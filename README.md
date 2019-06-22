@@ -1,3 +1,2 @@
-自用 types，目前已写 types
-
-- mpvue
+# install
+yarn add git+https://github.com/coppyC/types/tree/mpvue

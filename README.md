@@ -1,3 +1,3 @@
-自用 types，目前已写 types
+自用 types for typescript/javascript
 
-- mpvue
+通过切换分支查看不同代码

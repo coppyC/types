@@ -1,2 +1,2 @@
 # install
-yarn add git+https://github.com/coppyC/types/tree/mpvue
+yarn add -D coppyc/types#mpvue

@@ -1,6 +1,6 @@
 {
   "name": "@types/mpvue",
-  "version": "0.9",
+  "version": "0.9.0",
   "description": "拓展 vue, 增强mpvue提示",
   "main": "index.js",
   "types": "index.d.ts",

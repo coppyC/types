@@ -78,13 +78,46 @@ interface TabItemTapOption {
   text: string
 }
 
+export interface Config {
+  /** 导航栏标题文字内容，不写则使用全局标题 */
+  navigationBarTitleText?: string
+  /** 导航栏背景颜色，默认 #000000 */
+  navigationBarBackgroundColor?: string
+  /** 导航栏标题颜色，默认 white */
+  navigationBarTextStyle?: 'white'|'black'
+  /** 导航栏样式，仅支持以下值： `default` 默认样式;  `custom` 自定义导航栏，只保留右上角胶囊按钮 (微信客户端 7.0.0 以上) */
+  navigationStyle?: 'default' | 'custom'
+  /** 导航栏标题颜色，默认 #ffffff */
+  backgroundColor?: string
+  /** 导航栏标题颜色，默认 dark */
+  backgroundTextStyle?: 'dark'|'light'
+  /** 顶部窗口的背景色，仅 iOS 支持 (微信客户端 6.5.16 以上) */
+  backgroundColorTop?: string
+  /** 底部窗口的背景色，仅 iOS 支持 (微信客户端 6.5.16 以上) */
+  backgroundColorBottom?: string
+  /** 是否开启下拉刷新 */
+  enablePullDownRefresh?: boolean
+  /** 页面上拉触底事件触发时距页面底部距离，默认50，单位为px（无须写单位，心里有点B数就好了） */
+  onReachBottomDistance?: number
+  /** 屏幕旋转设置 <2.4.0 (auto) / 2.5.0 (landscape)> */
+  pageOrientation?: 'auto' | 'portrait' | 'landscape '
+  /** 禁止页面上下滚动，默认 false */
+  disableScroll?: boolean
+  /** 禁止页面右滑手势返回 (微信客户端 7.0.0) */
+  disableSwipeBack?: boolean
+  /** 页面自定义组件配置 */
+  usingComponents?: {
+    [name: string]: string
+  }
+}
+
 // 声明选项属性: 添加生命周期等各种钩子
 declare module 'vue/types/options' {
   interface ComponentOptions<V extends Vue> {
     /** 文件类型 */
     mpType?: 'app' | 'page'
     /** 页面配置 */
-    config?: any
+    config?: Config
     /** [App.vue] 小程序初始化完成时触发，全局只触发一次。参数也可以使用 `wx.getLaunchOptionsSync` 获取。 */
     onLaunch?(option: LaunchOption): void
     /** [App.vue] 小程序启动，或从后台进入前台显示时触发。也可以使用 `wx.onAppShow` 绑定监听。 */

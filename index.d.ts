@@ -1,5 +1,3 @@
-
-
 declare namespace Swagger {
   type Type =
     | 'object'
@@ -125,13 +123,7 @@ declare namespace Swagger {
     [pathTemplating: string]: PathItem
   }
   interface PathItem {
-    get: Operation
-    put: Operation
-    post: Operation
-    delete: Operation
-    options: Operation
-    head: Operation
-    patch: Operation
+    [method: string]: Operation
   }
   export interface Operation {
     /** A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier. */

@@ -1,0 +1,9 @@
+{
+  "name": "@types/swagger",
+  "version": "1.0.0",
+  "description": "swagger open api typing",
+  "types": "index.d.ts",
+  "repository": "git+https://github.com/coppyC/types/tree/swagger",
+  "author": "coppy",
+  "license": "MIT"
+}

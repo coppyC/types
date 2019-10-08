@@ -1,40 +1,42 @@
-type Type =
-  | 'object'
-  | 'string'
-  | 'boolean'
-  | 'array'
-  | 'number'
-  | 'integer'
-  | 'file'
 
-type MIME_Types =
-  | 'application/json'
-  | 'application/xml'
-  | 'application/x-www-form-urlencoded'
-  | 'multipart/form-data'
-  | 'text/plain; charset=utf-8'
-  | 'text/html'
-  | 'application/pdf'
-  | 'image/png'
-
-type Protocol =
-  | 'http'
-  | 'https'
-  | 'ws'
-  | 'wss'
-
-type Format =
-  | 'int32'
-  | 'int64'
-  | 'float'
-  | 'double'
-  | 'byte'
-  | 'binary'
-  | 'date'
-  | 'date-time'
-  | 'password'
 
 declare namespace Swagger {
+  type Type =
+    | 'object'
+    | 'string'
+    | 'boolean'
+    | 'array'
+    | 'number'
+    | 'integer'
+    | 'file'
+
+  type MIME_Types =
+    | 'application/json'
+    | 'application/xml'
+    | 'application/x-www-form-urlencoded'
+    | 'multipart/form-data'
+    | 'text/plain; charset=utf-8'
+    | 'text/html'
+    | 'application/pdf'
+    | 'image/png'
+
+  type Protocol =
+    | 'http'
+    | 'https'
+    | 'ws'
+    | 'wss'
+
+  type Format =
+    | 'int32'
+    | 'int64'
+    | 'float'
+    | 'double'
+    | 'byte'
+    | 'binary'
+    | 'date'
+    | 'date-time'
+    | 'password'
+
   /** Compatible with v2 & v3 */
   // export interface Docs {
   //   swagger: string
